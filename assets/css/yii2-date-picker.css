@@ -1,97 +1,85 @@
-.yii2-image-ajax .image-data img {
-    width: 120px;
-    border: 1px dashed #6A0088;
-}
-.yii2-image-ajax .image-data {
-    font-size: 0;
-}
-.yii2-image-ajax .table {
-    display: table;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-}
-.yii2-image-ajax .table-cell:first-child {
-    width: 120px;
-}
-.yii2-image-ajax .table-cell:last-child {
-    padding-left: 10px;
-}
-.yii2-image-ajax .table-cell {
-    display: table-cell;
-    vertical-align: top;
-}
-.btn-green-image-ajax {
-    padding: 7px 14px;
-    border: 1px solid white;
-    color: white;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    background: #6A0088;
-    border: 1px solid #3d0047;
-    font-weight: bold;
-    cursor: pointer;
-	margin-bottom: 5px;
-}
-.btn-red-image-ajax {
-    padding: 7px 14px;
-    border: 1px solid white;
-    color: white;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    background: #880000;
-    border: 1px solid #470000;
-    font-weight: bold;
-    cursor: pointer;
-	margin-bottom: 5px;
-}
-.yii2-image-ajax .subtitle {
-    font-size: 14px;
-    color: #BBBBBB;
-    width: 100%;
-}
-.yii2-image-ajax .dz-preview {
-    display: none;
-}
-.yii2-image-ajax .error-block {
-    border: 1px solid #BB0D0D;
-    background: #FFE8E8;
-    color: #690000;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    font-size: 13px;
-    display: none;
-}
-.yii2-image-ajax .image-data {
+.yii2-date-picker {
     position: relative;
-    height: 120px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
 }
-.yii2-image-ajax .image-data .load {
-    position: absolute;
-    top: 0;
+.yii2-date-picker input {
+    padding-right: 30px;
+}
+.yii2-date-picker span {
     right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: none;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 33px;
+    border: 1px solid #ccc;
+    padding: 9px;
+
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: white;
 }
-.yii2-image-ajax .image-data .load img {
+.yii2-date-picker span:before {
+    content: "\f073";
+}
+
+body .ui-widget-content {
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    font-size: 14px;
+    width: 220px;
+}
+body .ui-widget-header {
+    background: inherit;
     border: none;
-    width: 30px;
 }
-.yii2-image-ajax .image-data .load .table {
-	background-color: inherit;
-}
-.yii2-image-ajax .image-data .load .table-cell {
-    padding: 0;
+body .ui-state-default, body .ui-widget-content .ui-state-default, body .ui-widget-header .ui-state-default {
+    background: inherit;
+    border: none;
+    padding: 6px 0;
     text-align: center;
-    vertical-align: middle;
+    width: 28px;
+}
+body .ui-datepicker th {
+    padding: 6px 0;
+}
+body .ui-state-hover.ui-state-default {
+    background: #EEEEEE;
+    border-radius: 6px !important;
+}
+
+body .ui-state-active.ui-state-default {
+    background: #3276B1;
+    border-radius: 6px !important;
+    color: white;
+}
+body .ui-datepicker-title {
+    font-size: 12px;
+}
+
+body .ui-datepicker-next.ui-datepicker-next-hover {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+body .ui-datepicker-next.ui-datepicker-next-hover span {
+    margin-left: -9px;
+    margin-top: -7px;
+}
+
+body .ui-datepicker-prev.ui-datepicker-prev-hover {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+body .ui-datepicker-prev.ui-datepicker-prev-hover span {
+    margin-left: -7px;
+    margin-top: -7px;
 }

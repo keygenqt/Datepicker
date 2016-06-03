@@ -9,9 +9,9 @@ use \yii\web\AssetBundle;
  */
 class BowerAssets extends AssetBundle
 {
-	public $sourcePath = '@bower/yii2-datepicker/assets/css/';
+	public $sourcePath = '@keygenqt/datePicker/assets';
 
-	public $js = [
-		'yii2-date-picker.css'
+	public $css = [
+		'css/yii2-date-picker.css',
 	];
 }
