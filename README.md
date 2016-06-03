@@ -51,6 +51,10 @@ use keygenqt\datePicker\DatePicker;
 
 ```
 
+## Screenshot
+
+![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example.png?raw=true "Empty")
+
 ## License
 
 **yii2-datepicker** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
