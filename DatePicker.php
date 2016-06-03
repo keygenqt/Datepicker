@@ -8,11 +8,13 @@ class DatePicker extends \yii\jui\DatePicker
     {
         BowerAssets::register($this->getView());
 
+        $containerID = $this->inline ? $this->containerOptions['id'] : $this->options['id'];
+
         $this->getView()->registerJs("
-            $('#$this->id').parent().append('<div id=\'yii2-date-picker-$this->id\' class=\'yii2-date-picker\'><span></span></div>');
-            $('#$this->id').addClass('form-control').detach().appendTo('#yii2-date-picker-$this->id');
+            $('#$containerID').parent().append('<div id=\'yii2-date-picker-$containerID\' class=\'yii2-date-picker\'><span></span></div>');
+            $('#$containerID').addClass('form-control').detach().appendTo('#yii2-date-picker-$containerID');
         ");
 
-        return parent::run();
+        parent::run();
     }
 }

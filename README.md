@@ -29,15 +29,24 @@ View:
 use keygenqt\datePicker\DatePicker;
 
 <?= DatePicker::widget([
-        'model' => $model,
-        'attribute' => 'from_date',
-        //'language' => 'ru',
-        //'dateFormat' => 'yyyy-MM-dd',
+    'model' => $model,
+    'attribute' => 'updated',
 ]); ?>
 
 <?= $form->field($model, 'from_date')->widget(DatePicker::classname(), [
-    //'language' => 'ru',
-    //'dateFormat' => 'yyyy-MM-dd',
+
+]) ?>
+
+<?= \keygenqt\datePicker\DatePicker::widget([
+        'model' => $model,
+        'attribute' => 'updated',
+        'language' => 'en',
+        'dateFormat' => 'php:d-M-Y',
+        'clientOptions' => [
+            'showOtherMonths' => true,
+            'selectOtherMonths' => true,
+            'dayNamesMin' => array('S', 'M', 'T', 'W', 'T', 'F', 'S')
+        ]
 ]) ?>
 
 ```

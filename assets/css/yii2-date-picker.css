@@ -46,7 +46,7 @@ body .ui-state-default, body .ui-widget-content .ui-state-default, body .ui-widg
     width: 28px;
 }
 body .ui-datepicker th {
-    padding: 6px 0;
+    padding: 12px 0;
 }
 body .ui-state-hover.ui-state-default {
     background: #EEEEEE;
