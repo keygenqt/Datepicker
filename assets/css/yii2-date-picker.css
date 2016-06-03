@@ -12,7 +12,6 @@
     width: 33px;
     border: 1px solid #ccc;
     padding: 9px;
-
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -24,7 +23,6 @@
 .yii2-date-picker span:before {
     content: "\f073";
 }
-
 body .ui-widget-content {
     background-clip: padding-box;
     border: 1px solid #ccc;
@@ -52,7 +50,6 @@ body .ui-state-hover.ui-state-default {
     background: #EEEEEE;
     border-radius: 6px !important;
 }
-
 body .ui-state-active.ui-state-default {
     background: #3276B1;
     border-radius: 6px !important;
@@ -61,24 +58,20 @@ body .ui-state-active.ui-state-default {
 body .ui-datepicker-title {
     font-size: 12px;
 }
-
 body .ui-datepicker-next.ui-datepicker-next-hover {
     border: none;
     background: transparent;
     cursor: pointer;
 }
-
 body .ui-datepicker-next.ui-datepicker-next-hover span {
     margin-left: -9px;
     margin-top: -7px;
 }
-
 body .ui-datepicker-prev.ui-datepicker-prev-hover {
     border: none;
     background: transparent;
     cursor: pointer;
 }
-
 body .ui-datepicker-prev.ui-datepicker-prev-hover span {
     margin-left: -7px;
     margin-top: -7px;
