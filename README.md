@@ -40,7 +40,7 @@ use keygenqt\datePicker\DatePicker;
 <?= \keygenqt\datePicker\DatePicker::widget([
         'model' => $model,
         'attribute' => 'updated',
-        'language' => 'en',
+        'language' => 'en-US',
         'dateFormat' => 'php:d-M-Y',
         'clientOptions' => [
             'showOtherMonths' => true,
