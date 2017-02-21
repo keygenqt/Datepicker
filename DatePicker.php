@@ -43,7 +43,6 @@ class DatePicker extends \yii\jui\DatePicker
                 var dataPickerInst = null;
                 $('body').on('click', '.ui-datepicker-$containerID .ui-datepicker-close', function() {
                     setTimeout(function() {                     
-                        console.log(2);
                         $('#$containerID').datepicker('setDate', new Date(dataPickerInst.selectedYear, dataPickerInst.selectedMonth, 1));
                     }, 100);
                 });
@@ -57,7 +56,6 @@ class DatePicker extends \yii\jui\DatePicker
                  }"),
                 'onClose' => new \yii\web\JsExpression("function(dateText, inst) { 
                     dataPickerInst = inst;
-                    console.log(1);
                     setTimeout(function() { $('.ui-datepicker').removeClass('ui-datepicker-$containerID'); }, 500);
                  }")
             ]);

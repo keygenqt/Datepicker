@@ -29,15 +29,6 @@ View:
 use keygenqt\datePicker\DatePicker;
 
 <?= DatePicker::widget([
-    'model' => $model,
-    'attribute' => 'updated',
-]); ?>
-
-<?= $form->field($model, 'from_date')->widget(DatePicker::classname(), [
-
-]) ?>
-
-<?= \keygenqt\datePicker\DatePicker::widget([
         'model' => $model,
         'attribute' => 'updated',
         'language' => 'en-US',
@@ -51,9 +42,24 @@ use keygenqt\datePicker\DatePicker;
 
 ```
 
+View:
+
+```php
+use keygenqt\datePicker\DatePicker;
+
+<?= $form->field($model, 'date')->widget(DatePicker::className(), [
+    'placeholder' => 'Date',
+    'icon' => false,
+    'selectDay' => false,
+    'dateFormat' => 'php:F, Y'
+]); ?>
+
+```
+
 ## Screenshot
 
 ![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example.png?raw=true "Empty")
+![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example2.png?raw=true "Empty")
 
 ## License
 
