@@ -1,7 +1,7 @@
 {
-	"name": "keygenqt/yii2-datepicker",
+	"name": "pinxterapp/yii2-datepicker",
 	"description": "Widget datepicker jquery ui with update style.",
-	"keywords": ["yii2", "extension", "widget", "jquery", "plugin"],
+	"keywords": ["yii2", "extension", "widget", "jquery", "plugin", "keygenqt"],
 	"homepage": "https://github.com/keygenqt/yii2-datepicker",
 	"type": "yii2-extension",
 	"license": "BSD-3-Clause",
