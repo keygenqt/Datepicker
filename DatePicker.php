@@ -13,6 +13,7 @@ class DatePicker extends \yii\jui\DatePicker
     public function run()
     {
         BowerAssets::register($this->getView());
+        FontAwesomeAssets::register($this->getView());
 
         $containerID = $this->inline ? $this->containerOptions['id'] : $this->options['id'];
 

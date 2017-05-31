@@ -11,14 +11,15 @@
     height: 100%;
     width: 33px;
     border: 1px solid #ccc;
-    padding: 9px;
+    padding: 8px;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
+    font-size: 18px;
+    padding-top: 13px;
 }
 .yii2-date-picker span:before {
     content: "\f073";

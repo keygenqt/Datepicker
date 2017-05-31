@@ -59,7 +59,7 @@ use keygenqt\datePicker\DatePicker;
 ## Screenshot
 
 ![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example.png?raw=true "Empty")
-![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example2.png?raw=true "Empty")
+![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example3.png?raw=true "Empty")
 
 ## License
 
