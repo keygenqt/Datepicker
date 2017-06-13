@@ -9,6 +9,7 @@ class DatePicker extends \yii\jui\DatePicker
     public $placeholder = '';
     public $icon = true;
     public $selectDay = true;
+    public $disabled = true;
 
     public function run()
     {
@@ -61,6 +62,18 @@ class DatePicker extends \yii\jui\DatePicker
                  }")
             ]);
         }
+
+        if ($this->disabled) {
+            $this->clientOptions =  ArrayHelper::merge($this->clientOptions, [
+                'beforeShow' => new \yii\web\JsExpression("function(dateText, inst) { 
+                    $('input.hasDatepicker').attr('disabled', 'disabled');
+                 }"),
+                'onClose' => new \yii\web\JsExpression("function(dateText, inst) { 
+                    $('input.hasDatepicker').attr('disabled', null);
+                 }")
+            ]);
+        }
+
         parent::run();
     }
 }
