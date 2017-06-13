@@ -3,6 +3,12 @@
 namespace keygenqt\datePicker;
 
 use yii\helpers\ArrayHelper;
+use yii\helpers\FormatConverter;
+use yii\helpers\Html;
+use yii\helpers\Json;
+use yii\jui\DatePickerLanguageAsset;
+use yii\jui\JuiAsset;
+use yii\web\View;
 
 class DatePicker extends \yii\jui\DatePicker
 {
@@ -18,11 +24,25 @@ class DatePicker extends \yii\jui\DatePicker
 
         $containerID = $this->inline ? $this->containerOptions['id'] : $this->options['id'];
 
+        $this->getView()->registerJs("
+            Yii2Datepicker = {_updates: new Array(), update: function() {
+                Yii2Datepicker._updates.forEach(function(item, i, arr) {
+                    item();
+                });
+            }};
+        ");
+
+        $this->getView()->registerJs("
+            Yii2Datepicker._updates.push(function() {
+        ", View::POS_READY, $containerID . 'f-1');
+
         if ($this->icon) {
             $this->getView()->registerJs("
                 $('#$containerID').attr('placeholder', '{$this->placeholder}');
-                $('#$containerID').parent().append('<div id=\'yii2-date-picker-$containerID\' class=\'yii2-date-picker\'><span></span></div>');
-                $('#$containerID').addClass('form-control').detach().appendTo('#yii2-date-picker-$containerID');
+                if (!$('#$containerID').parent().hasClass('yii2-date-picker')) {
+                    $('#$containerID').parent().append('<div id=\'yii2-date-picker-$containerID\' class=\'yii2-date-picker\'><span></span></div>');
+                    $('#$containerID').addClass('form-control').detach().appendTo('#yii2-date-picker-$containerID');
+                }
             ");
         } else {
             $this->getView()->registerJs("
@@ -75,5 +95,11 @@ class DatePicker extends \yii\jui\DatePicker
         }
 
         parent::run();
+
+        $this->getView()->registerJs("
+            });
+        ", View::POS_READY, $containerID . 'f-2');
+
+        $this->getView()->registerJs("Yii2Datepicker.update();", View::POS_LOAD);
     }
 }
