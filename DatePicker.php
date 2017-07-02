@@ -15,7 +15,7 @@ class DatePicker extends \yii\jui\DatePicker
     public $placeholder = '';
     public $icon = true;
     public $selectDay = true;
-    public $disabled = true;
+    public $disabled = false;
 
     public function run()
     {
