@@ -68,12 +68,25 @@ body .ui-datepicker-next.ui-datepicker-next-hover span {
     margin-left: -9px;
     margin-top: -7px;
 }
+
 body .ui-datepicker-prev.ui-datepicker-prev-hover {
     border: none;
     background: transparent;
     cursor: pointer;
 }
+
 body .ui-datepicker-prev.ui-datepicker-prev-hover span {
     margin-left: -7px;
     margin-top: -7px;
+}
+
+.yii2-date-picker {
+    position: relative;
+}
+
+.yii2-date-picker .fas {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }

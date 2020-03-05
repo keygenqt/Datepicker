@@ -40,7 +40,7 @@ class DatePicker extends \yii\jui\DatePicker
             $this->getView()->registerJs("
                 $('#$containerID').attr('placeholder', '{$this->placeholder}');
                 if (!$('#$containerID').parent().hasClass('yii2-date-picker')) {
-                    $('#$containerID').parent().append('<div id=\'yii2-date-picker-$containerID\' class=\'yii2-date-picker\'><span></span></div>');
+                    $('#$containerID').parent().append('<div id=\'yii2-date-picker-$containerID\' class=\'yii2-date-picker\'><i class=\"fas fa-calendar-week\"></i></div>');
                     $('#$containerID').addClass('form-control').detach().appendTo('#yii2-date-picker-$containerID');
                 }
             ");

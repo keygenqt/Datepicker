@@ -15,7 +15,7 @@
 		}
 	],
 	"require": {
-		"bower-asset/Font-Awesome": "*",
+		"bower-asset/font-awesome": "~5.1",
 		"yiisoft/yii2-jui": "*",
 		"yiisoft/yii2": "*",
 		"php": ">=5.4.0"
