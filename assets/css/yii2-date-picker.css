@@ -90,3 +90,10 @@ body .ui-datepicker-prev.ui-datepicker-prev-hover span {
     right: 10px;
     top: 10px;
 }
+
+.yii2-date-picker svg {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
