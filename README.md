@@ -1,5 +1,8 @@
-yii2-datepicker
+Datepicker
 ===================
+
+![GitHub](https://img.shields.io/github/license/keygenqt/yii2-datepicker)
+![Packagist Downloads](https://img.shields.io/packagist/dt/keygenqt/yii2-datepicker)
 
 Yii2 DatePicker jquery ui with style bootstrap.
 
@@ -16,10 +19,6 @@ Either add
 ```
 
 of your `composer.json` file.
-
-## Latest Release
-
-The latest version of the module is v0.5.0 `BETA`.
 
 ## Usage
 
@@ -60,9 +59,3 @@ use keygenqt\datePicker\DatePicker;
 
 ![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example.png?raw=true "Empty")
 ![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-datepicker/master/screenshot/example3.png?raw=true "Empty")
-
-## License
-
-**yii2-datepicker** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
-
-
