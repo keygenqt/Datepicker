@@ -4,7 +4,7 @@ Datepicker
 ![GitHub](https://img.shields.io/github/license/keygenqt/yii2-datepicker)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/keygenqt/yii2-datepicker)
 
-Yii2 DatePicker jquery ui with style bootstrap.
+Yii2 DatePicker jquery ui with style like bootstrap.
 
 ## Installation
 
