@@ -115,6 +115,6 @@ class DatePicker extends \yii\jui\DatePicker
             });
         ", View::POS_READY, $containerID . 'f-2');
 
-        $this->getView()->registerJs("Yii2Datepicker.update();", View::POS_LOAD);
+        $this->getView()->registerJs("Yii2Datepicker.update();", View::POS_READY);
     }
 }
